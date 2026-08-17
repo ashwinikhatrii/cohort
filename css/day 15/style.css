@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#parent {
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow: auto; */
+}
+#box1 {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    flex-shrink: 1;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);  */
+    /* kisi v chiz ko centre karne k liye*/
+}
+    /* left: 400px;
+    top: 300px;
+    z-index: 5;
+} */
+
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(193, 21, 142);
+    /* position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 10; */
+}
+
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    /* position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 11; */
+}
+
+#box4 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(17, 173, 51);
+}
