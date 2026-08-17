@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+
+}
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    background-image: url(https://images.unsplash.com/photo-1783191250657-e5f7a17ea465?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    padding: 40px;
+}
+h1{
+    font-size: 100px;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    padding: 20px 40px;
+    color: white;
+    background-color: #C41E97;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+

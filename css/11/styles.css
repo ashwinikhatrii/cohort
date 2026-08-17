@@ -1,0 +1,74 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+#box1{
+    height:100px;
+    width: 100px;
+    background-color: cadetblue;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+ */
+#hello {
+    height: 200px;
+    width: 200px;
+    /* background: linear-gradient(to right bottom , red 70% , blue); */
+    /* background: radial-gradient(yellow,orange,red,black); */
+    background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+
+}
+
+#outer {
+    height: 200px;
+    width: 500px;
+    background-color: crimson;
+}
+
+#inner {
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: magenta;
+    background-image: url(https://images.unsplash.com/photo-1783154955296-3afcd019da24?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#haha {
+    background-color: salmon;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    padding: 25px;
+}
+button {
+    margin: 50px;
+    padding:10px 20px;
+    font-size: 20px;
+    font-weight: 600px;
+    background-color: beige;
+    color: black;
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}

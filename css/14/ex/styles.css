@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 60px;
+    width: 100%;
+    background-color:#181819;
+    font-weight: 300;
+
+}
+
+ #nav h4 {
+    color: white;
+}
+
+#nav h3 {
+    color: white;
+}
+
+#centre {
+    height: 80%;
+    width: 100%;
+    background-image: url(https://imgs.search.brave.com/fD8E4YndWhkpIx7csyfp-D6i8Ayx23lhHIGBwpfPsv4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly80a3dh/bGxwYXBlcnMuY29t/L2ltYWdlcy93YWxs/cy9wYWNrcy8zNzku/anBn);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+#centre h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+#centre h5{
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+#links button {
+    background-color: royalblue;
+    color: white;
+    padding: 13px 20px;
+    border-radius:30px;
+    border: none;
+    margin-top: 20px;
+}
+
+#links button:hover {
+    background-color: blue;
+}
