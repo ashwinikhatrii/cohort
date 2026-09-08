@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;/*cross axis*/
+    justify-content: space-evenly; /*main axis*/
+    flex-direction: column;
+}
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+#child2{
+    height: 200px;
+    width: 200px;
+    background-color:lightpink;
+}
+#child3{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+}
