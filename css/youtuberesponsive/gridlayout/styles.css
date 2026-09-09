@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color:#111;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-rows: 100px 100px 300px 300px;
+}
+
+#child1{
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+}
+#child2{
+    height: 100%;
+    width: 100%;
+    
+    background-color:darkgreen;
+}
+#child3{
+    height: 100%;
+    width: 100%;
+    
+    background-color: rgb(169, 6, 44);
+}
+#child4{
+    height: 100%;
+    width: 100%;
+    
+    background-color: rgb(212, 111, 64);
+}

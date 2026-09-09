@@ -16,20 +16,54 @@ html, body {
     display: flex;
     align-items: center;/*cross axis*/
     justify-content: space-evenly; /*main axis*/
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+}
+
+.child{
+    height: 100%;
+    width: 100%;
 }
 #child1{
     height: 200px;
     width: 200px;
     background-color: crimson;
+    border: 2px solid white;
+    flex-shrink: 0;
 }
 #child2{
     height: 200px;
     width: 200px;
     background-color:lightpink;
+    border: 2px solid white;
+
 }
 #child3{
     height: 200px;
     width: 200px;
-    background-color: greenyellow;
+    background-color:rgb(31, 220, 81);
+    border: 2px solid white;
+
+}
+#child4{
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    border: 2px solid white;
+
+}
+
+nav{
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    gap: 10px;
+}
+nav h4{
+    color: white;
 }
