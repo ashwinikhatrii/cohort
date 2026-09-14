@@ -15,14 +15,17 @@ html, body {
     width: 100%;
     background-color:#111;
     display: grid;
-    /* grid-template-columns: 1fr 2fr 1fr; */
-    grid-template-rows: 100px 100px 300px 300px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-auto-flow: column; */
 }
 
 #child1{
     height: 100%;
     width: 100%;
     background-color: gold;
+    align-self: center;
+    justify-self: center;
 }
 #child2{
     height: 100%;
