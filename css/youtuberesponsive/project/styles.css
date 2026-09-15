@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --gray:#212121;
+    --green:#009660;
+    --white:#e9e9e9;
+    --black:#0c0c0c;
+    --lgray:#929292;
+
+}
+@font-face {
+    font-family: neu;
+    src: url(./source/NeueMachina-Regular.woff2);
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color:var(--black);
+   
+}
+
+.green{
+    color: var(--green);
+}
+
+.gray{
+    color: var(--lgray);
+}
+nav{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    padding:15px 70px ;
+    position: fixed;
+    width: 100%;
+}
+
+.nav1{
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+    /* width: 300px; */
+}
+.nav1 img{
+    height:45px;
+ }
+
+.nav1 h4{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+ .nav2 {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+
+ }
+
+ .nav2 img{
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+ }
+ .nav2 h4{
+    /* font-family: monospace; */
+    font-family: neu;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.nav2 h4 i{
+    font-size: 20px;
+}
+
+
+.nav3 {
+    display: none;
+    gap: 30px;
+    align-items: center;
+
+ }
+
+ .nav3 img{
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+ }
+ .nav3 h4{
+    /* font-family: monospace; */
+    font-family: neu;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.nav3 h4 i{
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    nav{
+        padding: 13px 20px;
+    }
+    .nav1 h4{
+        font-size:12px ;
+    }
+    .nav img{
+        height: 30px;
+    }
+
+    .nav2{
+        display: none;
+    }
+    .nav3{
+        display: flex;
+    }
+}
+main{
+    padding-top: 100px;
+}
+.section1{
+    background-color: crimson;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px 70px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.section1 .left{
+    background-color: red;
+    width: 42%;
+}
+
+.section1 .left h1{
+    font-size: 45px;
+}
+
+.section1 .left .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 5px;
+    margin: 30px 0;
+
+}
+
+.section1 .left .tags h4 {
+    padding: 10px 20px;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: var(--gray);
+    
+}
+
+.left .price{
+    font-size: 35px;
+}
+
+.left .price span{
+    color: ;
+}
+
+.section1 .right{
+    background-color: #009660;
+    width: 45%;
+}
+
+.right img{
+    height: 400px;
+    width: 600px;
+}
