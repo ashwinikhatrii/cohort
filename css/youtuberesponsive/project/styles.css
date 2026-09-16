@@ -30,7 +30,7 @@ body{
     color: var(--green);
 }
 
-.gray{
+.lgray{
     color: var(--lgray);
 }
 nav{
@@ -161,15 +161,20 @@ main{
     border-radius: 4px;
     white-space: nowrap;
     background-color: var(--gray);
+
     
 }
 
 .left .price{
     font-size: 35px;
 }
+.left .price .lgray{
+    font-size: 20px;
+    font-weight: 800;
+}
 
 .left .price span{
-    color: ;
+    color: white;
 }
 
 .section1 .right{
@@ -177,7 +182,35 @@ main{
     width: 45%;
 }
 
-.right img{
+.section1 .right .right-in{
+    /* height: 800px; */
+    border-radius: 5px;
+    width: 800px;
+    overflow: hidden;
+    
+}
+
+.section1 .right .right-in .image{
+    width: 100%;
+}
+
+.section1 .right .right-in .image img{
+    width: 100%;
+}
+
+.section1 .right .right-in .image-bottom{
+    padding: 20px ;
+    padding-top: 40px;
+    background-color: var(--gray);
+    display: flex;
+    
+}
+
+.right-in .image-bottom h4{
+    background-color: var(--lgray);
+}
+
+/* .right img{
     height: 400px;
     width: 600px;
-}
+} */
