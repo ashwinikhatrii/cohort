@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+    background-color:gray ;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+#box1 h3{
+    color:azure;
+}
