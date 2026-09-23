@@ -10,16 +10,27 @@ html, body {
     width: 100%;
 }
 
+.parent h1{
+    padding-top: 30px;
+}
+
 .name{
+    height: 200px;
+    width: 100%;
     text-align: center;
     background-color:darkslateblue;
 }
 
 .name h1,p{
+    
     color: whitesmoke;
+    padding: 10px;
+
 }
 
 .about{
+    height: 200px;
+    width: 100%;
     text-align: center;
     background-color: whitesmoke;
 }
@@ -34,26 +45,66 @@ html, body {
 }
 
 .edu {
+    height: 200px;
+    width: 100%;
     text-align: center;
     background-color: skyblue;
 }
 
+
 .edu h4{
-    
+    margin-top: 10px;
+    /* border: 2px solid white; */
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    padding: 10px 15px;
+
+    background-color: white;
     
 }
 
 .skill{
+    height: 200px;
+    width: 100%;
     background-color: lightyellow;
     text-align: center;
 }
+.skill h4{
+    margin-left: 15%;
+    
+    /* border:  2px solid white; */
+    background-color: white;
+    margin-top: 10px;
+    width: 70%;
+
+
+}
 
 .projects{
+    height: 200px;
+    width: 100%;
     background-color: violet;
     text-align: center;
+}
+
+.projects h4{
+    margin-left: 15%;
+    /* border:  2px solid white; */
+    background-color: white;
+    margin-top: 10px;
+    width: 70%;
 }
 
 .contact{
     text-align: center;
     background-color: lightgreen;
+}
+
+.contact h4{
+    margin-left: 15%;
+    /* border:  2px solid white; */
+    background-color: white;
+    margin-top: 10px;
+    width: 70%;
 }
