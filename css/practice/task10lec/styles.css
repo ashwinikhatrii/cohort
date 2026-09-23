@@ -10,13 +10,6 @@ html, body {
     width: 100%;
 }
 
-#box1{
-    background-color:gray ;
-    height: 100px;
-    width: 100%;
-    color: white;
-}
-
-#box1 h3{
-    color:azure;
+.name{
+    text-align: center;
 }
