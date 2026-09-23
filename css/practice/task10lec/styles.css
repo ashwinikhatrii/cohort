@@ -12,4 +12,48 @@ html, body {
 
 .name{
     text-align: center;
+    background-color:darkslateblue;
+}
+
+.name h1,p{
+    color: whitesmoke;
+}
+
+.about{
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.about h1{
+    color: black;
+
+}
+
+.about p{
+    color: gray;
+}
+
+.edu {
+    text-align: center;
+    background-color: skyblue;
+}
+
+.edu h4{
+    
+    
+}
+
+.skill{
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.projects{
+    background-color: violet;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    background-color: lightgreen;
 }
