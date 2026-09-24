@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #e1306c;
+    padding: 2px;
+}
+
+/* User Information */
+.user-info h2 {
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 5px;
+}
+
+.fullname {
+    font-size: 14px;
+    color: #777777;
+}
+
+/* Bio */
+.bio {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Statistics */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    padding: 15px 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.label {
+    font-size: 13px;
+    color: #777777;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Follow Button */
+.follow-btn {
+    flex: 1;
+    background-color: #0095f6;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: #1877f2;
+}
+
+/* Message Button */
+.message-btn {
+    flex: 1;
+    background-color: #efefef;
+    color: #262626;
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.message-btn:hover {
+    background-color: #dbdbdb;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
