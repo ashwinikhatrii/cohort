@@ -11,6 +11,7 @@ html , body {
 }
 #car2{
     position: absolute;
+    /* left: 50%; */
     height: 100px;
     width: 200px;
     background-color: green;
