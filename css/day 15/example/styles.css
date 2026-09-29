@@ -26,7 +26,7 @@ html , body {
     width: 200px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3); /* xaxis yaxis blur color*/
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3); /* x axis y axis blur color*/
     padding: 20px;
     display: flex;
     align-items: center;
