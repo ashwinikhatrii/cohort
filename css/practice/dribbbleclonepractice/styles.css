@@ -1,22 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-.navbar{
+.navbar {
     height: 70px;
 
     display: flex;
     align-items: center;
 
-    padding:0 40px;
+    padding: 0 40px;
 
     position: sticky;
     top: 0;
@@ -25,7 +26,7 @@ html, body {
     background: white;
 }
 
-.logo{
+.logo {
     margin-right: 60px;
 }
 
@@ -33,12 +34,13 @@ html, body {
     display: flex;
     gap: 35px;
 }
-.nav-links a{
+
+.nav-links a {
     color: black;
     text-decoration: none;
 }
 
-.nav-actions{
+.nav-actions {
     margin-left: auto;
 
     display: flex;
@@ -48,37 +50,39 @@ html, body {
     flex-shrink: 0;
 }
 
-.nav-actions i{
+.nav-actions i {
     font-size: 20px;
 }
-.nav-actions button{
+
+.nav-actions button {
     white-space: nowrap;
     padding: 10px 16px;
     border: none;
     border-radius: 20px;
 }
 
-.nav-actions img{
+.nav-actions img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
     padding: 45px 60px;
     gap: 50px;
     /* background-color: aqua; */
 }
-.hero-tabs{
+
+.hero-tabs {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.hero-tabs button{
+.hero-tabs button {
     border: none;
     background-color: transparent;
 
@@ -88,17 +92,18 @@ html, body {
     border-radius: 30px;
 }
 
-.hero-tabs button:first-child{
+.hero-tabs button:first-child {
     border: 1px solid #ddd;
     background-color: white;
 }
-.hero-content{
+
+.hero-content {
     /* width: 50%; */
 
     flex: 1;
 }
 
-.hero-content h1{
+.hero-content h1 {
     margin-top: 45px;
     font-size: 52px;
 
@@ -117,14 +122,14 @@ html, body {
     gap: 15px;
 }
 
-.features p{
+.features p {
     display: flex;
     align-items: center;
     gap: 12px;
     font-size: 16px;
 }
 
-.hero-button{
+.hero-button {
     margin-top: 35px;
     width: fit-content;
 
@@ -139,21 +144,22 @@ html, body {
     font-size: 15px;
     font-weight: 600;
 }
-.hero-image{
+
+.hero-image {
     /* width: 50%; */
     flex: 1;
     overflow: hidden;
     border-radius: 24px;
 }
 
-.hero-image img{
+.hero-image img {
     width: 100%;
     height: 100%;
     /* display: block; */
     object-fit: cover;
 }
 
-.bottom-nav{
+.bottom-nav {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -161,11 +167,11 @@ html, body {
     padding: 25px 60px;
 }
 
-.bottom-item{
+.bottom-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    
+
     color: #666;
     font-size: 15px;
 }
