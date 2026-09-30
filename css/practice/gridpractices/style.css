@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+
+    background-color: #0b0b0f;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 1fr;
+
+    gap: 10px;
+
+    grid-template-areas:
+        "header header"
+        "aside section";
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    grid-area: header;
+
+    background-color: #15151b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    border-bottom: 1px solid #333;
+}
+
+.header h2 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.header nav {
+    display: flex;
+    gap: 35px;
+}
+
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: #ff4d00;
+}
+
+
+/* ================= ASIDE ================= */
+
+.aside {
+    grid-area: aside;
+
+    background-color: #15151b;
+
+    padding: 45px 35px;
+
+    border-right: 1px solid #333;
+}
+
+.aside h2 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 45px;
+}
+
+.aside p {
+    color: #bdbdbd;
+
+    font-size: 17px;
+
+    margin-bottom: 28px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.aside p:hover {
+    color: #ff4d00;
+
+    transform: translateX(5px);
+}
+
+.aside button {
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #ff4d00;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.aside button:hover {
+    background-color: #ff6a2a;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    grid-area: section;
+
+    background-color: #0f1014;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 40px;
+}
+
+
+/* ================= BIKE CARD ================= */
+
+.image {
+    height: 350px;
+    width: 300px;
+
+    background-color: #18191f;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 15px;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s;
+}
+
+.image:hover {
+    transform: translateY(-10px);
+
+    border-color: #ff4d00;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+.image img {
+    height: 260px;
+    width: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.image h3 {
+    color: white;
+
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+
+
+.image p {
+    color: #999;
+
+    margin-top: 7px;
+
+    font-size: 14px;
+}

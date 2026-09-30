@@ -21,10 +21,10 @@ body{
     gap: 30px;
     flex-wrap: nowrap;
     /* overflow: hidden; */
-    overflow: auto;
+    /* overflow: auto; */
 }
 #parent::-webkit-scrollbar{
-    /* display: none; */
+    display: none;
     background-color: lightblue;
 }
 #parent::-webkit-scrollbar-thumb{
