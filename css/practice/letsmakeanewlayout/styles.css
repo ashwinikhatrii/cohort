@@ -9,3 +9,57 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+main{
+
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: "sideup top top"
+                         "sideup middle topmid"
+                         "sidedown sidedown topdown";
+
+}
+
+.sideup{
+    border-radius: 20px;
+
+    grid-area: sideup;
+    background-color: magenta;
+}
+.top{
+    border-radius: 20px;
+    
+    grid-area: top;
+    background-color: cadetblue;
+}
+.middle{
+    border-radius: 20px;
+
+    grid-area: middle;
+    background-color: darkgoldenrod;
+}
+.topmid{
+    border-radius: 20px;
+    
+    grid-area: topmid;
+    background-color:greenyellow ;
+}
+
+.sidedown{
+    border-radius: 20px;
+
+    grid-area: sidedown;
+    background-color: deeppink;
+}
+
+.topdown{
+    border-radius: 20px;
+
+    grid-area: topdown;
+    background-color: cyan;
+}
