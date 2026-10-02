@@ -11,7 +11,7 @@ html, body {
 }
 
 main{
-
+    margin: 10px;
     gap: 15px;
     height: 100%;
     width: 100%;
