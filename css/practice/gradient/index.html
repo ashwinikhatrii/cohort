@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradient Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Gradient Generator</h1>
+        <p class="subtitle">Create beautiful CSS gradients</p>
+
+
+        <!-- Gradient Preview -->
+
+        <div class="gradient-preview">
+            <span>Gradient Preview</span>
+        </div>
+
+
+        <!-- Controls -->
+
+        <section class="controls">
+
+            <!-- Color 1 -->
+
+            <div class="color-box">
+                <label>Color 1</label>
+
+                <div class="color-input">
+                    <input type="color" value="#00E5FF">
+                    <span>#00E5FF</span>
+                </div>
+            </div>
+
+
+            <!-- Color 2 -->
+
+            <div class="color-box">
+                <label>Color 2</label>
+
+                <div class="color-input">
+                    <input type="color" value="#7C3AED">
+                    <span>#7C3AED</span>
+                </div>
+            </div>
+
+
+            <!-- Gradient Type -->
+
+            <div class="option">
+                <label>Gradient Type</label>
+
+                <select>
+                    <option>Linear</option>
+                    <option>Radial</option>
+                </select>
+            </div>
+
+
+            <!-- Angle -->
+
+            <div class="angle">
+
+                <div class="angle-header">
+                    <label>Angle</label>
+                    <span>135°</span>
+                </div>
+
+                <input type="range" min="0" max="360" value="135">
+
+            </div>
+
+        </section>
+
+
+        <!-- CSS Code -->
+
+        <div class="code-box">
+
+            <div class="code-header">
+                <span>CSS Code</span>
+                <button>Copy</button>
+            </div>
+
+            <code>
+                background: linear-gradient(135deg, #00E5FF, #7C3AED);
+            </code>
+
+        </div>
+
+
+        <!-- Random Button -->
+
+        <button class="random-btn">
+            🎲 Generate Random Gradient
+        </button>
+
+    </main>
+
+</body>
+</html>
