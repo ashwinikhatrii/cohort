@@ -1,168 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Advanced Bento Grid</title>
+    <title>Advanced Bento Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Background -->
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+
     <main class="container">
 
-        <!-- Hero Card -->
-        <div class="card hero">
-            <div class="hero-content">
-                <span class="tag">CREATIVE DEVELOPER</span>
 
-                <h1>
-                    Building digital
-                    <span>experiences.</span>
-                </h1>
+        <!-- ================= HERO ================= -->
 
-                <p>
-                    I design and develop modern websites,
-                    interfaces and digital experiences.
-                </p>
+        <section class="card hero">
 
-                <button>Explore My Work →</button>
+            <div class="glow"></div>
+
+            <div class="hero-top">
+                <span class="available">
+                    <i></i>
+                    Available for work
+                </span>
+
+                <span class="number">01</span>
             </div>
 
-            <div class="hero-circle"></div>
-        </div>
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    FRONTEND DEVELOPER
+                </p>
+
+                <h1>
+                    Designing
+                    <span>digital</span>
+                    experiences.
+                </h1>
+
+                <p class="description">
+                    I build modern, interactive and visually
+                    impressive digital experiences for the web.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="primary-btn">
+                        Explore work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="secondary-btn">
+                        Contact me
+                    </a>
+
+                </div>
+
+            </div>
 
 
-        <!-- Profile Card -->
-        <div class="card profile">
-            <div class="profile-img">
-                <span>HK</span>
+            <div class="hero-orb">
+                <div class="orb-inner"></div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <section class="card profile">
+
+            <div class="profile-number">
+                02
+            </div>
+
+            <div class="profile-image">
+                HK
             </div>
 
             <h2>Harsh Khatri</h2>
-            <p>Frontend Developer</p>
-
-            <div class="status">
-                <i></i>
-                Available for work
-            </div>
-        </div>
-
-
-        <!-- Skills Card -->
-        <div class="card skills">
-
-            <div class="card-heading">
-                <span>01</span>
-                <h3>Skills</h3>
-            </div>
-
-            <div class="skill-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Git</span>
-                <span>UI/UX</span>
-            </div>
-
-        </div>
-
-
-        <!-- Stats Card -->
-        <div class="card stats">
-
-            <div class="stat">
-                <h2>25+</h2>
-                <p>Projects</p>
-            </div>
-
-            <div class="stat">
-                <h2>2+</h2>
-                <p>Years Learning</p>
-            </div>
-
-        </div>
-
-
-        <!-- Large Project Card -->
-        <div class="card project">
-
-            <div class="project-top">
-                <span>FEATURED PROJECT</span>
-                <span>↗</span>
-            </div>
-
-            <div class="project-content">
-                <h2>Modern<br>Dashboard</h2>
-
-                <p>
-                    A clean and responsive dashboard
-                    interface built for modern web applications.
-                </p>
-            </div>
-
-            <div class="project-preview">
-                <div class="preview-bar"></div>
-
-                <div class="preview-content">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- Social Card -->
-        <div class="card social">
-
-            <div class="social-icon">GH</div>
-
-            <div>
-                <h3>GitHub</h3>
-                <p>View my projects</p>
-            </div>
-
-            <span class="arrow">↗</span>
-
-        </div>
-
-
-        <!-- Quote Card -->
-        <div class="card quote">
-
-            <span class="quote-mark">“</span>
 
             <p>
-                Good design is not just what
-                looks good. It is how it works.
+                Creative Developer
             </p>
 
-            <small>— Design Philosophy</small>
+            <div class="location">
+                <span>●</span>
+                India
+            </div>
 
-        </div>
+        </section>
 
 
-        <!-- Contact Card -->
-        <div class="card contact">
+        <!-- ================= SKILLS ================= -->
 
-            <span>LET'S WORK TOGETHER</span>
+        <section class="card skills">
+
+            <div class="card-header">
+
+                <div>
+                    <span class="mini-label">
+                        EXPERTISE
+                    </span>
+
+                    <h3>Tech Stack</h3>
+                </div>
+
+                <span class="card-number">
+                    03
+                </span>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <b>95%</b>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <b>92%</b>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <b>78%</b>
+                </div>
+
+                <div class="skill">
+                    <span>React</span>
+                    <b>70%</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BIG PROJECT ================= -->
+
+        <section class="card project">
+
+            <div class="project-header">
+
+                <div>
+                    <span class="mini-label">
+                        SELECTED PROJECT
+                    </span>
+
+                    <h2>
+                        Analytics
+                        <span>Dashboard</span>
+                    </h2>
+                </div>
+
+                <a href="#">↗</a>
+
+            </div>
+
+
+            <div class="dashboard">
+
+                <div class="dashboard-top">
+
+                    <div class="dash-logo">
+                        A
+                    </div>
+
+                    <div class="dash-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-body">
+
+                    <div class="sidebar">
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="chart-title">
+                            <span>Revenue</span>
+                            <b>$48,290</b>
+                        </div>
+
+                        <div class="chart">
+
+                            <div class="bar b1"></div>
+                            <div class="bar b2"></div>
+                            <div class="bar b3"></div>
+                            <div class="bar b4"></div>
+                            <div class="bar b5"></div>
+                            <div class="bar b6"></div>
+                            <div class="bar b7"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-tags">
+
+                <span>UI/UX</span>
+                <span>Dashboard</span>
+                <span>Responsive</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="card stats">
+
+            <span class="card-number">
+                05
+            </span>
+
+            <div class="stat-item">
+
+                <h2>24<span>+</span></h2>
+
+                <p>Projects</p>
+
+            </div>
+
+            <div class="stat-item">
+
+                <h2>12<span>k</span></h2>
+
+                <p>Lines of code</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section class="card experience">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="mini-label">
+                        EXPERIENCE
+                    </span>
+
+                    <h3>Journey</h3>
+
+                </div>
+
+                <span class="card-number">
+                    06
+                </span>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="dot"></div>
+
+                    <div>
+                        <strong>Frontend Developer</strong>
+                        <p>2025 — Present</p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="dot"></div>
+
+                    <div>
+                        <strong>Web Designer</strong>
+                        <p>2024 — 2025</p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="dot"></div>
+
+                    <div>
+                        <strong>Started Coding</strong>
+                        <p>2023</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GITHUB ================= -->
+
+        <a href="#" class="card social github">
+
+            <div class="social-icon">
+                GH
+            </div>
+
+            <div class="social-text">
+
+                <span>FOLLOW</span>
+
+                <h3>GitHub</h3>
+
+            </div>
+
+            <strong>↗</strong>
+
+        </a>
+
+
+        <!-- ================= INSTAGRAM ================= -->
+
+        <a href="#" class="card social instagram">
+
+            <div class="social-icon">
+                IG
+            </div>
+
+            <div class="social-text">
+
+                <span>FOLLOW</span>
+
+                <h3>Instagram</h3>
+
+            </div>
+
+            <strong>↗</strong>
+
+        </a>
+
+
+        <!-- ================= QUOTE ================= -->
+
+        <section class="card quote">
+
+            <span class="quote-number">
+                09
+            </span>
+
+            <div class="quote-mark">
+                “
+            </div>
+
+            <p>
+                Simplicity is the ultimate
+                sophistication.
+            </p>
+
+            <small>
+                — Leonardo da Vinci
+            </small>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="card contact">
+
+            <div class="contact-glow"></div>
+
+            <span class="mini-label">
+                HAVE A PROJECT?
+            </span>
 
             <h2>
-                Have an idea?
-                <br>
-                Let's build it.
+                Let's build
+                <span>something</span>
+                great.
             </h2>
 
-            <a href="#">Get in touch →</a>
+            <a href="#">
+                Start a conversation
+                <span>→</span>
+            </a>
 
-        </div>
+            <div class="contact-number">
+                10
+            </div>
+
+        </section>
+
 
     </main>
 
 </body>
+
 </html>
