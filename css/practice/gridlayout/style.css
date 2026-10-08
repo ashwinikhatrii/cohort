@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #0b0b0d;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr
+        1fr
+        1fr;
+
+    grid-template-rows:
+        250px
+        250px
+        220px;
+
+    gap: 18px;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    padding: 28px;
+
+    background: #151518;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(255,255,255,0.2);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    grid-column: span 2;
+    grid-row: span 2;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #633cff,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #19191f,
+            #101014
+        );
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 550px;
+}
+
+.tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    color: #aaa;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 72px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    color: #8d70ff;
+}
+
+.hero p {
+    color: #aaa;
+
+    max-width: 450px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.hero button {
+    border: none;
+
+    background: #fff;
+    color: #111;
+
+    padding: 14px 20px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Decorative circle */
+
+.hero-circle {
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    right: -100px;
+    top: -100px;
+
+    background: linear-gradient(
+        135deg,
+        #7c5cff,
+        #b08cff
+    );
+
+    filter: blur(1px);
+
+    opacity: 0.8;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+
+    grid-column: span 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.profile-img {
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #754cff,
+            #d5caff
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #111;
+
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.profile p {
+    color: #888;
+
+    font-size: 14px;
+}
+
+.status {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    color: #aaa;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.status i {
+
+    width: 7px;
+    height: 7px;
+
+    background: #62e68a;
+
+    border-radius: 50%;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+    grid-column: span 1;
+}
+
+.card-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.card-heading span {
+    color: #666;
+
+    font-size: 12px;
+}
+
+.card-heading h3 {
+    font-size: 18px;
+}
+
+.skill-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.skill-list span {
+
+    padding: 9px 13px;
+
+    border-radius: 30px;
+
+    background: #222226;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.skill-list span:hover {
+
+    background: #7655ff;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= STATS ================= */
+
+.stats {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h2 {
+
+    font-size: 38px;
+
+    letter-spacing: -2px;
+}
+
+.stat p {
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* ================= PROJECT ================= */
+
+.project {
+
+    grid-column: span 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1c1c21,
+            #101013
+        );
+}
+
+.project-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+}
+
+.project-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.project-content h2 {
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 10px;
+}
+
+.project-content p {
+
+    color: #777;
+
+    max-width: 300px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* Fake dashboard */
+
+.project-preview {
+
+    position: absolute;
+
+    width: 300px;
+    height: 170px;
+
+    right: -40px;
+    bottom: -40px;
+
+    background: #242429;
+
+    border-radius: 18px;
+
+    padding: 15px;
+
+    transform: rotate(-5deg);
+
+    border: 1px solid #333;
+}
+
+.preview-bar {
+
+    width: 60px;
+    height: 7px;
+
+    background: #7655ff;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.preview-content {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.preview-content div {
+
+    height: 90px;
+
+    flex: 1;
+
+    border-radius: 8px;
+
+    background: #33333a;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.social-icon {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    background: #242429;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.social h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+.social p {
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+.arrow {
+
+    margin-left: auto;
+
+    font-size: 20px;
+
+    color: #777;
+
+    transition: 0.3s;
+}
+
+.social:hover .arrow {
+
+    transform: translate(5px, -5px);
+
+    color: white;
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote {
+
+    background:
+        linear-gradient(
+            135deg,
+            #17171c,
+            #211d32
+        );
+}
+
+.quote-mark {
+
+    font-size: 60px;
+
+    color: #7655ff;
+
+    line-height: 0.5;
+}
+
+.quote p {
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    margin-top: 15px;
+
+    max-width: 280px;
+}
+
+.quote small {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+
+    grid-column: span 2;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7655ff,
+            #39247c
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contact > span {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.7;
+
+    margin-bottom: 12px;
+}
+
+.contact h2 {
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 20px;
+}
+
+.contact a {
+
+    width: fit-content;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .container {
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: auto;
+
+    }
+
+    .hero {
+        grid-column: span 2;
+        grid-row: span 1;
+
+        min-height: 400px;
+    }
+
+    .project {
+        grid-column: span 2;
+    }
+
+    .contact {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .card {
+
+        grid-column: span 1 !important;
+
+        min-height: 220px;
+    }
+
+    .hero {
+
+        min-height: 450px;
+    }
+
+    .hero h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -3px;
+    }
+
+    .project-preview {
+
+        width: 220px;
+
+        height: 130px;
+    }
+
+    .contact h2 {
+
+        font-size: 28px;
+    }
+}
