@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #111;
+}
+
+
+/* ---------------- NAVBAR ---------------- */
+
+header {
+    width: 100%;
+    padding: 25px 7%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    background: #e63946;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e63946;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 21px;
+}
+
+.nav-icons i {
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    min-height: 100vh;
+    padding: 150px 7% 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    z-index: 2;
+}
+
+.small-title {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 6vw, 85px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #e63946;
+}
+
+.description {
+    max-width: 500px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn {
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 25px;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(230, 57, 70, 0.3);
+}
+
+.explore {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ---------------- CAN AREA ---------------- */
+
+.hero-image {
+    width: 45%;
+    height: 600px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 470px;
+    height: 470px;
+
+    border-radius: 50%;
+
+    background: #e63946;
+
+    position: absolute;
+
+    box-shadow:
+        0 0 0 30px rgba(230, 57, 70, 0.08),
+        0 0 0 70px rgba(230, 57, 70, 0.04);
+}
+
+
+/* ---------------- CAN ---------------- */
+
+.can {
+    width: 190px;
+    height: 440px;
+
+    position: relative;
+    z-index: 2;
+
+    transform: rotate(7deg);
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        90deg,
+        #b71929,
+        #e63946 25%,
+        #ff5964 50%,
+        #d82232 75%,
+        #a91525
+    );
+
+    box-shadow:
+        20px 30px 40px rgba(0, 0, 0, 0.25);
+}
+
+.can-top {
+    width: 175px;
+    height: 25px;
+
+    background: #ddd;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: -8px;
+    left: 8px;
+}
+
+.can-bottom {
+    width: 175px;
+    height: 25px;
+
+    background: #bbb;
+
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -8px;
+    left: 8px;
+}
+
+.can-content {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    transform: rotate(-7deg);
+}
+
+.flavour {
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 20px;
+
+    transform: rotate(-7deg);
+}
+
+.can-content p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    transform: rotate(-7deg);
+}
+
+.lemon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    transform: rotate(-7deg);
+}
+
+.lemon i {
+    color: #e63946;
+    font-size: 25px;
+}
+
+
+/* ---------------- BUBBLES ---------------- */
+
+.bubble {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+
+    z-index: 3;
+}
+
+.bubble1 {
+    top: 80px;
+    right: 100px;
+}
+
+.bubble2 {
+    top: 160px;
+    right: 30px;
+
+    width: 15px;
+    height: 15px;
+}
+
+.bubble3 {
+    bottom: 120px;
+    left: 50px;
+
+    width: 18px;
+    height: 18px;
+}
+
+.bubble4 {
+    bottom: 80px;
+    right: 80px;
+
+    width: 35px;
+    height: 35px;
+}
+
+
+/* ---------------- PRODUCTS ---------------- */
+
+.products {
+    padding: 100px 7%;
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #e63946;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 45px;
+}
+
+.section-heading span {
+    color: #e63946;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 280px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: #f7f7f7;
+
+    transition: 0.3s;
+}
+
+.product-card:hover,
+.product-card.active {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.cola {
+    background: #ffd9dd;
+    color: #e63946;
+}
+
+.orange {
+    background: #ffe2b8;
+    color: #f77f00;
+}
+
+.lime {
+    background: #dff5c8;
+    color: #55a630;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 130px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .circle {
+        width: 350px;
+        height: 350px;
+    }
+
+    .can {
+        width: 150px;
+        height: 350px;
+    }
+
+    .flavour {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-image {
+        height: 420px;
+    }
+
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .can {
+        width: 125px;
+        height: 300px;
+    }
+
+    .can-top,
+    .can-bottom {
+        width: 115px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    .flavour {
+        font-size: 25px;
+    }
+
+    .lemon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .products {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
