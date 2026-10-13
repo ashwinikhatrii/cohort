@@ -11,21 +11,23 @@ html, body {
 }
 
 .blue {
-  padding: 20px 30px;
+  padding: 15px 30px;
   background-color: blue;
   color: white;
+  border: none;
   border-radius: 7px;
-  font-size: 20px;
-  outline: none;
   cursor: pointer;
+  font-size: 18px;
+  outline: none;
 }
 
 .red {
-  padding: 20px 30px;
+  padding: 15px 30px;
   background-color: red;
   color: white;
+  border: none;
   border-radius: 7px;
-  font-size: 20px;
-  outline: none;
   cursor: pointer;
+  font-size: te;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+@import "button";
+
 *{
     margin: 0;
     padding: 0;
@@ -10,20 +12,10 @@ html, body {
     width: 100%;
 }
 
-@mixin button-style($bg-color){
-    padding: 20px 30px;
-    background-color:$bg-color;
-    color: white;
-    border-radius: 7px;
-    font-size: 20px;
-    outline: none;
-    cursor: pointer;
+.blue{
+    @include button-style(blue,white,18px);
 }
 
-.blue {
-    @include button-style(blue);
-}
 .red{
-    @include button-style(red);
-    
+    @include button-style(red,white,$text-size);
 }
