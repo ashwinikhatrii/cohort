@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crave - Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">crave<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+    </nav>
+
+    <button class="cart">
+      <i class="ri-shopping-bag-3-line"></i>
+      <span>Cart (0)</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="tagline">GOOD FOOD, GOOD MOOD ✦</span>
+
+        <h1>Hungry?<br>Let's <span>fix that.</span></h1>
+
+        <p>
+          Delicious meals from your favourite spots,
+          delivered fresh to your doorstep.
+        </p>
+
+        <a href="#menu" class="primary-btn">
+          Explore menu <i class="ri-arrow-right-line"></i>
+        </a>
+
+        <div class="delivery-info">
+          <div class="delivery-icon">
+            <i class="ri-timer-flash-line"></i>
+          </div>
+          <div>
+            <strong>Fast delivery</strong>
+            <small>Freshness at your door</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-circle"></div>
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+          alt="Delicious burger"
+        >
+        <div class="floating-badge">
+          <span>⭐ 4.9</span>
+          <small>Customer favourite</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section" id="menu">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">WHAT ARE YOU CRAVING?</span>
+          <h2>Explore categories</h2>
+        </div>
+        <a href="#food" class="view-all">View all ↗</a>
+      </div>
+
+      <div class="category-grid">
+        <a href="#food" class="category-card">
+          <span>🍔</span>
+          <strong>Burgers</strong>
+          <small>12 items</small>
+        </a>
+
+        <a href="#food" class="category-card">
+          <span>🍕</span>
+          <strong>Pizza</strong>
+          <small>08 items</small>
+        </a>
+
+        <a href="#food" class="category-card">
+          <span>🍜</span>
+          <strong>Noodles</strong>
+          <small>10 items</small>
+        </a>
+
+        <a href="#food" class="category-card">
+          <span>🥗</span>
+          <strong>Healthy</strong>
+          <small>06 items</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="popular section" id="food">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">HANDPICKED FOR YOU</span>
+          <h2>Popular <span>dishes.</span></h2>
+        </div>
+        <a href="#food" class="view-all">See all ↗</a>
+      </div>
+
+      <div class="food-grid">
+        <article class="food-card">
+          <div class="food-image">
+            <span class="food-label">BESTSELLER</span>
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58bd?auto=format&fit=crop&w=600&q=80"
+              alt="Classic cheeseburger"
+              loading="lazy"
+            >
+            <button class="heart" aria-label="Add burger to favourites">
+              <i class="ri-heart-line"></i>
+            </button>
+          </div>
+          <div class="food-info">
+            <div class="food-title">
+              <h3>Classic Burger</h3>
+              <span>⭐ 4.8</span>
+            </div>
+            <p>Juicy patty · Fresh veggies</p>
+            <div class="food-bottom">
+              <strong>₹199</strong>
+              <button aria-label="Add Classic Burger to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-image">
+            <span class="food-label new">POPULAR</span>
+            <img
+              src="https://images.unsplash.com/photo- pizza-placeholder?auto=format&fit=crop&w=600&q=80"
+              alt="Freshly baked pizza"
+              loading="lazy"
+            >
+            <button class="heart" aria-label="Add pizza to favourites">
+              <i class="ri-heart-line"></i>
+            </button>
+          </div>
+          <div class="food-info">
+            <div class="food-title">
+              <h3>Cheese Pizza</h3>
+              <span>⭐ 4.7</span>
+            </div>
+            <p>Extra cheese · Italian herbs</p>
+            <div class="food-bottom">
+              <strong>₹249</strong>
+              <button aria-label="Add Cheese Pizza to cart">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80"
+              alt="Asian noodle bowl"
+              loading="lazy"
+            >
+            <button class="heart" aria-label="Add noodles to favourites">
+              <i class="ri-heart-line"></i>
+            </button>
+          </div>
+          <div class="food-info">
+            <div class="food-title">
+              <h3>Spicy Noodles</h3>
+              <span>⭐ 4.6</span>
+            </div>
+            <p>Asian flavours · Hot & fresh</p>
+            <div class="food-bottom">
+              <strong>₹179</strong>
+              <button aria-label="Add Spicy Noodles to cart">+</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="offer" id="offers">
+      <div>
+        <span>THE FIRST BITE IS ON US</span>
+        <h2>Good food.<br>Better deals.</h2>
+        <p>Get 20% off your first order.</p>
+        <a href="#menu" class="offer-btn">Order now ↗</a>
+      </div>
+      <div class="offer-emoji">🍟</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo">crave<span>.</span></a>
+    <p>Made with love. Served with flavour. ❤️</p>
+    <small>© 2026 Crave. Demo website.</small>
+  </footer>
+
+</body>
+</html>
