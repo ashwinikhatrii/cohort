@@ -1,33 +1,31 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="stopwatch">
-        <h1>STOPWATCH</h1>
-        <p class="subtitle">Track every second</p>
+      <h1>STOPWATCH</h1>
+      <p class="subtitle">Track every second</p>
 
-        <div class="timer" id="timer">00:00:00</div>
+      <div class="timer" id="timer">00:00:00</div>
 
-        <div class="buttons">
-            <button id="startBtn" class="start">Start</button>
-            <button id="pauseBtn" class="pause">Pause</button>
-            <button id="resetBtn" class="reset">Reset</button>
-            <button id="lapBtn" class="lap">Lap</button>
-        </div>
+      <div class="buttons">
+        <button id="startBtn" class="start">Start</button>
+        <button id="pauseBtn" class="pause">Pause</button>
+        <button id="resetBtn" class="reset">Reset</button>
+        <button id="lapBtn" class="lap">Lap</button>
+      </div>
 
-        <div class="lap-section">
-            <h2>Lap Times</h2>
-            <ul id="lapList"></ul>
-        </div>
+      <div class="lap-section">
+        <h2>Lap Times</h2>
+        <ul id="lapList"></ul>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
