@@ -27,6 +27,12 @@ main{
 
         background-color:red;
         border: 2px solid black;
+        transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+    }
+    section:hover{
+        flex-grow: 1.5;
+        z-index: 1;
     }
     section:nth-child(1){
         background-image: url(https://i.pinimg.com/736x/10/00/44/1000443df58e2b5be4960988dfed4013.jpg);
