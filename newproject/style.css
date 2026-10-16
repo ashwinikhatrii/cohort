@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+}
+
+/* Game Heading */
+h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #a5b4fc;
+    text-shadow: 0 0 25px rgba(129, 140, 248, 0.4);
+}
+
+/* Instructions */
+p {
+    font-size: 16px;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+/* Game Input */
+input {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 16px;
+
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #6366f1;
+    border-radius: 12px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #a5b4fc;
+    box-shadow: 0 0 18px rgba(129, 140, 248, 0.35);
+}
+
+/* Buttons */
+button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Result Message */
+#result {
+    min-height: 24px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #34d399;
+}
+
+/* Attempts Counter */
+body > p:last-of-type {
+    font-size: 16px;
+    color: #e2e8f0;
+}
+
+#attempts {
+    display: inline-block;
+    min-width: 30px;
+    margin-left: 5px;
+    padding: 4px 9px;
+
+    color: #c4b5fd;
+    background: rgba(139, 92, 246, 0.2);
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+/* Reset Button */
+button:last-of-type {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+button:last-of-type:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    body {
+        gap: 16px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    button {
+        padding: 12px 22px;
+    }
+}
