@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    gap: 20px;
+
+
+
+    section{
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        flex-grow: 1;
+
+        background-color:red;
+        border: 2px solid black;
+    }
+    section:nth-child(1){
+        background-image: url(https://i.pinimg.com/736x/10/00/44/1000443df58e2b5be4960988dfed4013.jpg);
+
+
+    }
+    section:nth-child(2){
+        background-image: url(https://i.pinimg.com/736x/81/ac/ca/81accaed77c05f808b4b23818fab69a5.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(https://i.pinimg.com/1200x/a6/10/0c/a6100c2d841647c34baddf16bdfe5e43.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(https://i.pinimg.com/736x/9e/54/ef/9e54ef1dc7f5bb2bf8f0ceca3d382bcd.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(https://i.pinimg.com/736x/3d/5e/df/3d5edf057349a7898e38a9c6f7b8c085.jpg);
+    }
+}
