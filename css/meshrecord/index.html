@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessMate - Food Count</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🍽️</div>
+                <div>
+                    <h1>MessMate</h1>
+                    <p>Food Count Manager</p>
+                </div>
+            </div>
+
+            <div class="date">
+                <span>📅</span>
+                <span>October 2026</span>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div>
+                <p class="subtitle">YOUR DAILY TRACKER</p>
+                <h2>Mess Food Records</h2>
+                <p class="description">
+                    Keep track of everyone's daily meals in one place.
+                </p>
+            </div>
+
+            <div class="welcome-icon">🥗</div>
+        </section>
+
+        <!-- Summary Cards -->
+        <section class="summary">
+
+            <div class="summary-card">
+                <div class="summary-icon purple">👥</div>
+                <div>
+                    <p>Total Members</p>
+                    <h3>3</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon orange">🌅</div>
+                <div>
+                    <p>Morning Meals</p>
+                    <h3>2</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon green">🌙</div>
+                <div>
+                    <p>Evening Meals</p>
+                    <h3>2</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Members Heading -->
+        <section class="members-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Member Details</h2>
+                    <p>Daily food count and payment cycle</p>
+                </div>
+
+                <span class="member-badge">3 Members</span>
+            </div>
+
+            <!-- Member Cards -->
+            <div class="member-grid">
+
+                <!-- Ashwini -->
+                <article class="member-card">
+
+                    <div class="member-top">
+                        <div class="avatar avatar-purple">A</div>
+
+                        <div class="member-info">
+                            <h3>Ashwini</h3>
+                            <p>Member #001</p>
+                        </div>
+
+                        <span class="status active">Active</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h4>Today's Food Status</h4>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌅</span>
+                            <span>Morning</span>
+                        </div>
+                        <span class="food-status taken">✓ Taken</span>
+                    </div>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌙</span>
+                            <span>Evening</span>
+                        </div>
+                        <span class="food-status taken">✓ Taken</span>
+                    </div>
+
+                    <div class="food-days">
+                        <div>
+                            <p>Food-days used</p>
+                            <h3>18.5 <span>/ 30</span></h3>
+                        </div>
+                        <span class="days-icon">📊</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress purple-progress"></div>
+                    </div>
+
+                    <p class="remaining">11.5 food-days remaining</p>
+
+                    <div class="card-footer">
+                        <span>Payment Cycle</span>
+                        <strong>18.5 / 30 days</strong>
+                    </div>
+
+                </article>
+
+                <!-- Raj -->
+                <article class="member-card">
+
+                    <div class="member-top">
+                        <div class="avatar avatar-orange">R</div>
+
+                        <div class="member-info">
+                            <h3>Raj</h3>
+                            <p>Member #002</p>
+                        </div>
+
+                        <span class="status active">Active</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h4>Today's Food Status</h4>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌅</span>
+                            <span>Morning</span>
+                        </div>
+                        <span class="food-status taken">✓ Taken</span>
+                    </div>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌙</span>
+                            <span>Evening</span>
+                        </div>
+                        <span class="food-status skipped">✕ Skipped</span>
+                    </div>
+
+                    <div class="food-days">
+                        <div>
+                            <p>Food-days used</p>
+                            <h3>22.5 <span>/ 30</span></h3>
+                        </div>
+                        <span class="days-icon">📊</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress orange-progress"></div>
+                    </div>
+
+                    <p class="remaining">7.5 food-days remaining</p>
+
+                    <div class="card-footer">
+                        <span>Payment Cycle</span>
+                        <strong>22.5 / 30 days</strong>
+                    </div>
+
+                </article>
+
+                <!-- Rahul -->
+                <article class="member-card">
+
+                    <div class="member-top">
+                        <div class="avatar avatar-green">R</div>
+
+                        <div class="member-info">
+                            <h3>Rahul</h3>
+                            <p>Member #003</p>
+                        </div>
+
+                        <span class="status active">Active</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h4>Today's Food Status</h4>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌅</span>
+                            <span>Morning</span>
+                        </div>
+                        <span class="food-status skipped">✕ Skipped</span>
+                    </div>
+
+                    <div class="meal-row">
+                        <div class="meal-name">
+                            <span class="meal-icon">🌙</span>
+                            <span>Evening</span>
+                        </div>
+                        <span class="food-status taken">✓ Taken</span>
+                    </div>
+
+                    <div class="food-days">
+                        <div>
+                            <p>Food-days used</p>
+                            <h3>15.5 <span>/ 30</span></h3>
+                        </div>
+                        <span class="days-icon">📊</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress green-progress"></div>
+                    </div>
+
+                    <p class="remaining">14.5 food-days remaining</p>
+
+                    <div class="card-footer">
+                        <span>Payment Cycle</span>
+                        <strong>15.5 / 30 days</strong>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Food Count Rules -->
+        <section class="rules">
+            <h3>Food Count Rules</h3>
+
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <span class="rule-check">✓✓</span>
+                    <div>
+                        <strong>Full Food-Day</strong>
+                        <p>Both meals taken = 1 day</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span class="rule-half">✓✕</span>
+                    <div>
+                        <strong>Half Food-Day</strong>
+                        <p>One meal taken = 0.5 day</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span class="rule-zero">✕✕</span>
+                    <div>
+                        <strong>No Food-Day</strong>
+                        <p>No meals taken = 0 days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ for easier mess management</p>
+            <span>MessMate © 2026</span>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
