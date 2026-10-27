@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.stopwatch {
+    width: 100%;
+    max-width: 480px;
+    padding: 35px 25px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px #0004;
+}
+
+h1 {
+    font-size: 27px;
+    letter-spacing: 4px;
+    color: #38bdf8;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+.timer {
+    margin: 40px 0;
+    font-size: clamp(38px, 10vw, 58px);
+    font-family: monospace;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.start {
+    background: #22c55e;
+    color: #052e16;
+}
+
+.pause {
+    background: #facc15;
+    color: #422006;
+}
+
+.reset {
+    background: #ef4444;
+    color: white;
+}
+
+.lap {
+    background: #38bdf8;
+    color: #082f49;
+}
+
+.lap-section {
+    margin-top: 35px;
+    text-align: left;
+}
+
+.lap-section h2 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #475569;
+    font-size: 18px;
+}
+
+#lapList {
+    list-style: none;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#lapList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5px;
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+    font-family: monospace;
+}

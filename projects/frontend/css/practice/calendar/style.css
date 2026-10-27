@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f7;
+}
+
+/* Main Calendar */
+
+.calendar {
+    width: 420px;
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.calendar-header h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+.calendar-header button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f1f3f5;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.calendar-header button:hover {
+    background: #222;
+    color: white;
+}
+
+/* Weekdays */
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-bottom: 10px;
+}
+
+.weekdays div {
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #888;
+}
+
+/* Dates */
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 8px;
+}
+
+.days div {
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.days div:hover {
+    background: #222;
+    color: white;
+}
+
+/* Previous month dates */
+
+.days .other-month {
+    color: #bbb;
+}
+
+/* Today's date */
+
+.days div:nth-child(6) {
+    background: #222;
+    color: white;
+    font-weight: bold;
+}

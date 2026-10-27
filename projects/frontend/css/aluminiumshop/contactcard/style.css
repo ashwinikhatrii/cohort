@@ -1,0 +1,204 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #e7ebef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Standard wallet-size visiting card */
+.visiting-card {
+    width: 3.5in;
+    height: 2in;
+    padding: 9px;
+    background: #fff;
+    border: 1px solid #b7c3ce;
+    border-radius: 5px;
+    color: #142536;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #0002;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #142536;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logo {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    border: 1px solid #d5e0e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: #142536;
+    background: #d5e0e9;
+    border-radius: 4px;
+}
+
+.top h1 {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.top h2 {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #c5d3df;
+    margin-top: 2px;
+}
+
+.top p {
+    font-size: 8px;
+    margin-top: 3px;
+    color: #e0e7ed;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin: 7px 0;
+}
+
+.product {
+    position: relative;
+    height: 46px;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #dce3e9;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 1px;
+    background: #142536eF;
+    color: white;
+    font-size: 7px;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.contact small {
+    font-size: 7px;
+    letter-spacing: 1.5px;
+    color: #687b8c;
+}
+
+.contact strong {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.contact span {
+    font-size: 7px;
+    color: #52687a;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.buttons a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 7px;
+    font-size: 7px;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    background: #1378cf;
+    white-space: nowrap;
+}
+
+.buttons a:last-child {
+    background: #159b59;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #d7e0e7;
+    padding-top: 4px;
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #52687a;
+}
+
+/* Mobile preview only: card keeps print dimensions */
+@media screen and (max-width: 340px) {
+    .visiting-card {
+        transform: scale(0.9);
+        transform-origin: center;
+        flex-shrink: 0;
+    }
+}
+
+@media print {
+    @page {
+        size: 3.5in 2in;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background: white;
+        min-height: auto;
+        display: block;
+    }
+
+    .visiting-card {
+        width: 3.5in;
+        height: 2in;
+        border-radius: 0;
+        border: 0.5pt solid #b7c3ce;
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

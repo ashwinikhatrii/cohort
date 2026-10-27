@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+     
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y:auto;
+        overflow-x: hidden;
+
+}
+section{
+    color: white;
+    min-height: 550px;
+ background-image: linear-gradient(
+rgba(70,40,100,0.35),
+rgba(150,50,100,035)
+ );
+ background-size: cover;
+ background-position: center;
+    nav{
+  display: flex;
+  gap: 10px;
+padding-top: 20px;
+i{
+    font-size: 30px;
+}
+ii{
+    font-size: 30px;
+  padding-left:110px ;
+
+}
+  
+    }
+    .pfirst{
+ display:flex;
+ flex-direction: column;
+ width: 70vw;
+  padding-left: 10px;
+ 
+}
+.heading{
+    display: flex;
+    overflow-wrap: anywhere;
+    align-items: center;
+  justify-content: space-evenly; 
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    h5{
+        padding-top: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        gap: 10px;
+    }
+     
+    }
+    .r{
+        padding-left: 10px;
+    }
+    .icon{
+        display: flex;
+        padding-top: 50px;
+        padding-left: 10px;
+        gap: 10px;
+    }
+    .id{
+        display: flex;
+        padding-top: 60px;
+        line-height: 0.5;
+         padding-left: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            ;
+            
+        }
+ 
+    }
+    .psecond{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7vw;
+       gap: 10px;
+       font-weight: 400;
+       padding-top: 10px;
+
+       h6{
+        padding-left: 1px;
+       }
+    }
+}
+main{
+    background-color: white;
+  box-sizing: border-box;
+  display: flex;
+
+   flex-direction: column;
+  min-height: 1200px;
+  max-width: 100%;
+    padding: 10px;
+ h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ p{
+    line-height: 1.5;
+ }
+ .image{
+   position: relative;    
+ img{
+    width: 100%;
+ }
+ div{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+     button{
+        font-size: 18px;
+           color: white;
+           background-color:  rgb(241, 100, 100);
+           border: none;
+           padding: 10px 30px;
+    }
+ }
+    }
+    button{
+        padding: 12px 20px;
+        background-color:  rgb(216, 46, 46);
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    ul{
+  list-style-type: disc;
+  padding-left: 30px;
+  li{
+    margin-bottom: 20px;
+  }
+    }
+    p{
+        margin-bottom: 15px;
+    }
+.box{
+    background-color:rgb(241, 235, 223);
+     width: 100%;
+    padding: 30px;
+    h2{
+       margin-bottom:30px ;
+        text-align: center;
+    }
+ 
+}
+.points{
+    display: flex;
+    justify-content: space-between;
+    ul{
+margin-bottom: 10px;
+    }
+}
+}

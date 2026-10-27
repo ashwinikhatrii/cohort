@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        -45deg,
+        #0f0c29,
+        #302b63,
+        #24243e,
+        #1c1c5c
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Animated background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Main card */
+#main {
+    width: 350px;
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(100, 100, 255, 0.2);
+
+    animation: floatCard 3s ease-in-out infinite;
+    transition: box-shadow 0.4s ease;
+}
+
+/* Floating animation */
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Card hover glow */
+#main:hover {
+    box-shadow: 0 0 40px rgba(120, 100, 255, 0.5);
+}
+
+/* Heading */
+#device {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+
+    animation: fadeIn 1.2s ease;
+}
+
+/* Heading entrance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dropdown */
+select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid #8b7cff;
+    border-radius: 10px;
+    outline: none;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Dropdown hover animation */
+select:hover {
+    border-color: #00eaff;
+    box-shadow: 0 0 18px rgba(0, 234, 255, 0.5);
+    transform: scale(1.03);
+}
+
+/* Dropdown focus */
+select:focus {
+    border-color: #00eaff;
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.6);
+}
+
+/* Dropdown options */
+select option {
+    background: #24243e;
+    color: #ffffff;
+}
+
+/* Keyboard accessibility */
+select:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

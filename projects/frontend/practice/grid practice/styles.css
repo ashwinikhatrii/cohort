@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    margin: 20px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navbar h4{
+    margin-left: 60%;
+}
+#container{
+    height: 650px;
+    width: 90%;
+    background-color: #0e0101;
+}
+#hero h1{
+    margin: 30px;
+    font-size: 200;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.cards{
+    margin: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:150px 300px;
+
+    grid-template-areas: " box1 box2 box3 box4"
+                         " social-media marketing data search-engine";
+}
+.card p{
+    color: white;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.social-media{
+    background-color: #81e9e4;
+}
+.marketing{
+    background-color: #fff;
+}
+.data{
+    background-color: #d67ceb;
+}
+.search-engine{
+    background-color: #d55555;
+}

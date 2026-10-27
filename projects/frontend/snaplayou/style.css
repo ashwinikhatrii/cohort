@@ -1,0 +1,438 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffc00;
+    color: #111;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.ghost {
+    font-size: 34px;
+}
+
+.download-btn {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* Main Layout */
+
+.container {
+    min-height: calc(100vh - 85px);
+    padding: 35px 10% 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.left {
+    flex: 1;
+    max-width: 550px;
+    animation: slideIn 0.8s ease;
+}
+
+.tagline {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.left h1 {
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+
+.description {
+    max-width: 380px;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #303000;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 15px 36px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #111;
+    color: white;
+    border: 2px solid #111;
+}
+
+.signup-btn {
+    background: transparent;
+    border: 2px solid #111;
+    color: #111;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px #00000020;
+}
+
+.terms {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #454500;
+}
+
+.terms a {
+    color: #111;
+    font-weight: 700;
+}
+
+/* Phone Mockup */
+
+.right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 470px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.phone {
+    width: 265px;
+    height: 490px;
+    border: 8px solid #171717;
+    border-radius: 38px;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 15px 20px 0 #00000012;
+    transform: rotate(4deg);
+    transition: 0.4s;
+    animation: float 4s ease-in-out infinite;
+}
+
+.phone:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.phone-top {
+    height: 38px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.camera {
+    height: 205px;
+    background: #fffc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.camera-circle {
+    width: 115px;
+    height: 115px;
+    background: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 30px #00000010;
+}
+
+.camera-circle span {
+    font-size: 65px;
+    animation: bounce 2s infinite;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.sparkle-one {
+    top: 30px;
+    right: 30px;
+}
+
+.sparkle-two {
+    bottom: 28px;
+    left: 27px;
+}
+
+.snap-content {
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.snap-content h2 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.snap-content p {
+    font-size: 11px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.snap-button {
+    margin-top: 23px;
+    background: #111;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #eee;
+    font-size: 18px;
+}
+
+/* Floating Cards */
+
+.floating-card {
+    position: absolute;
+    background: white;
+    padding: 14px 18px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 30px #00000012;
+    animation: float 4s ease-in-out infinite;
+    z-index: 2;
+}
+
+.floating-card > span {
+    font-size: 27px;
+}
+
+.floating-card strong {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.floating-card p {
+    font-size: 9px;
+    color: #777;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+
+.card-one {
+    top: 100px;
+    left: -55px;
+}
+
+.card-two {
+    bottom: 95px;
+    right: -45px;
+    animation-delay: 1s;
+}
+
+/* Animations */
+
+@keyframes float {
+    0%, 100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -12px;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+    .container {
+        padding: 40px 7%;
+        gap: 35px;
+    }
+
+    .left h1 {
+        font-size: 58px;
+    }
+
+    .right {
+        min-width: 250px;
+    }
+
+    .phone {
+        width: 235px;
+        height: 460px;
+    }
+
+    .card-one {
+        left: -25px;
+    }
+
+    .card-two {
+        right: -20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        height: 75px;
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .download-btn {
+        padding: 10px 17px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 6% 60px;
+        gap: 40px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: clamp(48px, 13vw, 70px);
+        letter-spacing: -3px;
+    }
+
+    .description {
+        margin: 20px auto 0;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .right {
+        width: 100%;
+        min-width: 0;
+        margin-top: 10px;
+    }
+
+    .card-one {
+        left: -10px;
+    }
+
+    .card-two {
+        right: -10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .floating-card {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .floating-card strong {
+        font-size: 9px;
+    }
+
+    .floating-card p {
+        font-size: 8px;
+    }
+
+    .phone {
+        width: 220px;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fffacc;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            background-color: #d8f3dc;
+            padding: 30px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2d6a4f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .inputElement {
+            padding: 6px;
+            border-radius: 6px;
+            border: 1.5px solid #95d5b2;
+            background-color: #ffffff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            padding: 6px;
+            border-radius: 6px;
+            border: none;
+            background-color: #ffffff;
+            font-size: 14px;
+        }
+
+        .inputElement:active {
+            outline: none;
+            border-color: #2d6a4f;
+            box-shadow: 0 0 5px #95d5b2;
+        }
+
+
+        button {
+            background-color: #ff91af;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .imgicon {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+
+        .eyeicon {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+
+        button:hover {
+            background-color: #a83261;
+        }
+
+        .switch-section {
+            text-align: center;
+            color: #2d6a4f;
+            margin-top: 10px;
+        }
+
+        .switch-section button {
+            margin-top: 8px;
+            background-color: #ff91af;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+
+        .signup-section button:hover {
+            background-color: #a83261;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="card" id="logincard">
+            <h2>Login</h2>
+            <form>
+                <div class="inputElement">
+                    <img src="user.png" alt="" class="imgicon">
+                    <input type="Email" placeholder="Email">
+                </div>
+                <div class="inputElement">
+                    <img src="hidden.png" alt="" class="eyeicon">
+                    <input type="password" placeholder="password">
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="switch-section">
+            <p>Don't have an account?</p>
+            <a href="signup.html">Create Account</a>
+        </div>
+    </div>
+</body>
+
+</html>

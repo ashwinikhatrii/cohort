@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.blue {
+  padding: 15px 30px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+}
+
+.red {
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: te;
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

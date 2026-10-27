@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIDE — Sneaker Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">STRIDE<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#products">Sneakers</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#products" class="bag">
+      <i class="ri-shopping-bag-3-line"></i>
+      <span>Shop now</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span></span> THE NEW COLLECTION — 2026
+        </p>
+
+        <h1>MOVE<br>DIFFERENT<span>.</span></h1>
+
+        <p class="hero-description">
+          Not just sneakers. A statement.
+          Discover footwear built for those who make their own rules.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">
+            Explore collection <i class="ri-arrow-right-up-line"></i>
+          </a>
+          <a href="#about" class="text-link">Our story ↗</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <h3>25K<span>+</span></h3>
+            <p>Happy customers</p>
+          </div>
+          <div>
+            <h3>40<span>+</span></h3>
+            <p>Unique designs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <span class="vertical-text">DESIGNED TO STAND OUT</span>
+
+        <img
+          class="hero-shoe"
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85"
+          alt="Red statement sneaker"
+        >
+
+        <div class="floating-card">
+          <p>FEATURED DROP</p>
+          <h3>Velocity X</h3>
+          <span>₹8,499</span>
+        </div>
+
+        <span class="hero-number">01 / 04</span>
+      </div>
+    </section>
+
+    <section class="brand-strip">
+      <span>BUILT FOR THE STREETS</span>
+      <span>✳</span>
+      <span>MADE TO MOVE</span>
+      <span>✳</span>
+      <span>NEVER STAND STILL</span>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Trending <span>kicks.</span></h2>
+        </div>
+
+        <a href="#products" class="view-all">
+          View collection <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image image-red">
+            <span class="tag">BESTSELLER</span>
+            <button class="favorite" aria-label="Favorite Velocity X">
+              <i class="ri-heart-line"></i>
+            </button>
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+              alt="Velocity X red sneakers"
+              loading="lazy"
+            >
+            <a href="#buy" class="quick-add">Quick view ↗</a>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Velocity X</h3>
+              <p>Street collection</p>
+            </div>
+            <strong>₹8,499</strong>
+          </div>
+          <div class="product-colors">
+            <span class="color red"></span>
+            <span class="color black"></span>
+            <span class="color white"></span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-white">
+            <span class="tag tag-new">NEW DROP</span>
+            <button class="favorite" aria-label="Favorite Court Classic">
+              <i class="ri-heart-line"></i>
+            </button>
+            <img
+              src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+              alt="White Court Classic sneakers"
+              loading="lazy"
+            >
+            <a href="#buy" class="quick-add">Quick view ↗</a>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Court Classic</h3>
+              <p>Everyday essentials</p>
+            </div>
+            <strong>₹6,999</strong>
+          </div>
+          <div class="product-colors">
+            <span class="color white"></span>
+            <span class="color black"></span>
+            <span class="color green"></span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-dark">
+            <span class="tag">LIMITED</span>
+            <button class="favorite" aria-label="Favorite Night Runner">
+              <i class="ri-heart-line"></i>
+            </button>
+            <img
+              src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+              alt="Dark Night Runner sneakers"
+              loading="lazy"
+            >
+            <a href="#buy" class="quick-add">Quick view ↗</a>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Night Runner</h3>
+              <p>Performance series</p>
+            </div>
+            <strong>₹9,299</strong>
+          </div>
+          <div class="product-colors">
+            <span class="color black"></span>
+            <span class="color green"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo" id="about">
+      <div class="promo-content">
+        <p class="eyebrow">YOUR NEXT EVERYDAY PAIR</p>
+        <h2>Good shoes.<br><span>Better moves.</span></h2>
+        <p>
+          Find your fit, own your style, and take every step
+          with confidence.
+        </p>
+        <a href="#products" class="btn btn-primary">
+          Find your pair <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+      <div class="promo-decoration">S<span>.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo">STRIDE<span>.</span></a>
+    <p>Built for the streets. Made for you.</p>
+    <span>© 2026 STRIDE. Demo storefront.</span>
+  </footer>
+
+</body>
+</html>

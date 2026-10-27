@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8edf2;
+    font-family: Arial, "Noto Sans Devanagari", sans-serif;
+    padding: 20px;
+}
+
+.card {
+    width: 3.5in;
+    height: 2in;
+    padding: 8px;
+    background: #fff;
+    color: #152a40;
+    border: 1px solid #a9b7c5;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px #0002;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #142a40;
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+}
+
+.logo {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c5d4e2;
+    color: #142a40;
+    background: #e0e8ef;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.shop-info {
+    min-width: 0;
+}
+
+.shop-info h1 {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.shop-info h2 {
+    font-size: 11px;
+    color: #d3e0eb;
+    margin-top: 2px;
+}
+
+.shop-info p {
+    font-size: 7px;
+    margin-top: 3px;
+    color: #c6d5e2;
+}
+
+.owner {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.product {
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #e3e9ef;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 1px;
+    text-align: center;
+    background: #142a40eF;
+    color: white;
+    font-size: 7px;
+}
+
+.services {
+    text-align: center;
+    font-size: 8px;
+    line-height: 1.4;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background: #eef2f6;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone > span {
+    font-size: 17px;
+}
+
+.phone small {
+    display: block;
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.phone strong {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.whatsapp {
+    text-decoration: none;
+    background: #159b59;
+    color: white;
+    font-weight: bold;
+    font-size: 9px;
+    padding: 8px 9px;
+    border-radius: 4px;
+}
+
+@media print {
+    @page {
+        size: 3.5in 2in;
+        margin: 0;
+    }
+
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background: white;
+    }
+
+    .card {
+        width: 3.5in;
+        height: 2in;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

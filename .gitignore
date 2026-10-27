@@ -1,0 +1,5 @@
+# Compiled output
+*.exe
+
+# Generated source maps
+*.map

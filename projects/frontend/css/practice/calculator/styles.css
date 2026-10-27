@@ -1,0 +1,116 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body using Flexbox */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e272e;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background-color: #2f3640;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Display Section */
+.display {
+    height: 100px;
+    background-color: #dfe6e9;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    overflow: hidden;
+}
+
+/* Previous Value */
+.previous {
+    font-size: 16px;
+    color: #636e72;
+}
+
+/* Current Value */
+.current {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+/* Buttons using CSS Grid */
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+/* Common Button Styling */
+button {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #dcdde1;
+    color: #2f3640;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #f5f6fa;
+    transform: scale(1.05);
+}
+
+/* Click Effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Operators */
+.operator {
+    background-color: #00a8ff;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #0097e6;
+}
+
+/* Zero Button - Takes 2 Columns */
+.zero {
+    grid-column: span 2;
+}
+
+/* Equal Button */
+.equal {
+    background-color: #44bd32;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #4cd137;
+}

@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #171717;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Main packet */
+.packet {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px 22px 30px 30px;
+    background: linear-gradient(
+        145deg,
+        #ffdf22 0%,
+        #ffbd00 28%,
+        #ffcc00 48%,
+        #ffb700 100%
+    );
+    box-shadow:
+        15px 20px 35px #0008,
+        inset 5px 0 10px #ffffff55,
+        inset -6px 0 12px #a65a0055;
+    transform: rotate(-3deg);
+}
+
+/* Packet shine */
+.shine {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 35px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffffff38,
+        transparent
+    );
+    transform: skewX(-10deg);
+}
+
+/* Top and bottom seals */
+.top-fold,
+.bottom-fold {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: repeating-linear-gradient(
+        90deg,
+        #c77a00 0px,
+        #ffdd45 3px,
+        #b66c00 6px
+    );
+    border-bottom: 2px solid #e69a00;
+}
+
+.top-fold {
+    top: 0;
+}
+
+.bottom-fold {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+/* Brand section */
+.brand {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 270px;
+    transform: translateX(-50%) rotate(-5deg);
+    text-align: center;
+    background: #e92320;
+    padding: 10px 4px;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #b50d0d;
+    z-index: 2;
+}
+
+.brand-name {
+    display: block;
+    color: white;
+    font-size: 37px;
+    font-weight: 1000;
+    font-style: italic;
+    letter-spacing: -2px;
+    text-shadow: 2px 3px #9c0909;
+}
+
+.brand-tag {
+    display: block;
+    color: #ffdf25;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* Flavour text */
+.flavor {
+    position: absolute;
+    top: 165px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.flavor span {
+    display: inline-block;
+    color: white;
+    background: #e92720;
+    padding: 5px 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    transform: rotate(-4deg);
+}
+
+.flavor h1 {
+    color: #d51d16;
+    font-size: 51px;
+    line-height: 1.1;
+    font-weight: 1000;
+    font-style: italic;
+    letter-spacing: -3px;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 3px 4px 0 #ffed9b;
+}
+
+/* CSS-made potato chips */
+.chips {
+    position: absolute;
+    top: 250px;
+    left: 35px;
+    width: 230px;
+    height: 115px;
+}
+
+.chip {
+    position: absolute;
+    width: 83px;
+    height: 55px;
+    border-radius: 48% 52% 42% 58%;
+    background:
+        radial-gradient(
+            ellipse at 30% 25%,
+            #fff2a0 0%,
+            #ffd54c 35%,
+            #e99819 75%,
+            #b9610c 100%
+        );
+    border: 2px solid #eaa02b;
+    box-shadow:
+        inset 0 -5px 7px #bd6c12,
+        2px 4px 4px #9c500055;
+}
+
+.chip1 {
+    top: 12px;
+    left: 0;
+    transform: rotate(25deg);
+}
+
+.chip2 {
+    top: 0;
+    left: 75px;
+    transform: rotate(-18deg);
+}
+
+.chip3 {
+    top: 35px;
+    left: 65px;
+    transform: rotate(35deg);
+}
+
+.chip4 {
+    top: 18px;
+    left: 135px;
+    transform: rotate(45deg);
+}
+
+.chip5 {
+    top: 55px;
+    left: 130px;
+    transform: rotate(-15deg);
+}
+
+/* Crunch badge */
+.burst {
+    position: absolute;
+    right: 12px;
+    top: 220px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: #e62920;
+    border: 3px solid white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.3;
+    transform: rotate(12deg);
+    box-shadow: 0 3px 0 #a50c0c;
+}
+
+/* Bottom details */
+.bottom-text {
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    text-align: center;
+    color: #a52a08;
+}
+
+.bottom-text span {
+    display: block;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.bottom-text strong {
+    display: inline-block;
+    background: #e92720;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    border: 2px solid white;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .packet {
+        transform: scale(0.9) rotate(-3deg);
+    }
+}

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyBook - Flight Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <a href="#" class="logo">
+        <i class="ri-flight-takeoff-fill"></i>
+        SkyBook
+      </a>
+
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#flights">Flights</a>
+        <a href="#">My Bookings</a>
+        <a href="#">Support</a>
+      </nav>
+
+      <a href="#" class="login">
+        <i class="ri-user-3-fill"></i>
+        Sign In / Register
+      </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Book Your Next Flight</h1>
+        <p>Better Flights. Brighter Journeys.</p>
+
+        <div class="features">
+          <span><i class="ri-shield-check-line"></i> Safe & Secure</span>
+          <span><i class="ri-customer-service-2-line"></i> 24/7 Support</span>
+          <span><i class="ri-star-line"></i> Best Price</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Form -->
+    <section class="search-section">
+      <form class="search-form">
+        <div class="field">
+          <label>From</label>
+          <div class="field-value">
+            <i class="ri-flight-takeoff-line"></i>
+            <span>New Delhi (DEL)</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>To</label>
+          <div class="field-value">
+            <i class="ri-flight-land-line"></i>
+            <span>Mumbai (BOM)</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Departure</label>
+          <div class="field-value">
+            <i class="ri-calendar-line"></i>
+            <span>20 Oct 2026</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Return</label>
+          <div class="field-value">
+            <i class="ri-calendar-line"></i>
+            <span>25 Oct 2026</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Passengers</label>
+          <div class="field-value">
+            <i class="ri-user-line"></i>
+            <span>1 Adult</span>
+          </div>
+        </div>
+
+        <button type="button" class="search-btn">Search Flights</button>
+      </form>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="flights">
+      <section class="flight-list">
+        <div class="section-heading">
+          <div>
+            <h2>Available Flights</h2>
+            <p>
+              New Delhi (DEL) <i class="ri-arrow-right-line"></i> Mumbai (BOM) |
+              20 Oct 2026
+            </p>
+          </div>
+
+          <select aria-label="Sort flights">
+            <option>Sort: Lowest Price</option>
+            <option>Sort: Earliest Departure</option>
+            <option>Sort: Shortest Duration</option>
+          </select>
+        </div>
+
+        <!-- Flight 1 -->
+        <article class="flight-card">
+          <div class="airline">
+            <div class="airline-logo indigo">6E</div>
+            <div>
+              <h3>IndiGo</h3>
+              <p>6E 203</p>
+            </div>
+          </div>
+
+          <div class="time">
+            <h3>06:20</h3>
+            <p>DEL</p>
+          </div>
+
+          <div class="duration">
+            <span>2h 15m</span>
+            <div class="line"></div>
+            <small>Non-stop</small>
+          </div>
+
+          <div class="time">
+            <h3>08:35</h3>
+            <p>BOM</p>
+          </div>
+
+          <div class="price">
+            <h3>₹4,299</h3>
+            <p>per person</p>
+          </div>
+
+          <button class="book-btn">Book Now</button>
+        </article>
+
+        <!-- Flight 2 -->
+        <article class="flight-card">
+          <div class="airline">
+            <div class="airline-logo airindia">AI</div>
+            <div>
+              <h3>Air India</h3>
+              <p>AI 677</p>
+            </div>
+          </div>
+
+          <div class="time">
+            <h3>09:45</h3>
+            <p>DEL</p>
+          </div>
+
+          <div class="duration">
+            <span>2h 30m</span>
+            <div class="line"></div>
+            <small>Non-stop</small>
+          </div>
+
+          <div class="time">
+            <h3>12:15</h3>
+            <p>BOM</p>
+          </div>
+
+          <div class="price">
+            <h3>₹5,499</h3>
+            <p>per person</p>
+          </div>
+
+          <button class="book-btn">Book Now</button>
+        </article>
+
+        <!-- Flight 3 -->
+        <article class="flight-card">
+          <div class="airline">
+            <div class="airline-logo spicejet">SJ</div>
+            <div>
+              <h3>SpiceJet</h3>
+              <p>SG 818</p>
+            </div>
+          </div>
+
+          <div class="time">
+            <h3>12:10</h3>
+            <p>DEL</p>
+          </div>
+
+          <div class="duration">
+            <span>2h 20m</span>
+            <div class="line"></div>
+            <small>Non-stop</small>
+          </div>
+
+          <div class="time">
+            <h3>14:30</h3>
+            <p>BOM</p>
+          </div>
+
+          <div class="price">
+            <h3>₹4,199</h3>
+            <p>per person</p>
+          </div>
+
+          <button class="book-btn">Book Now</button>
+        </article>
+
+        <!-- Flight 4 -->
+        <article class="flight-card">
+          <div class="airline">
+            <div class="airline-logo vistara">V</div>
+            <div>
+              <h3>Vistara</h3>
+              <p>UK 960</p>
+            </div>
+          </div>
+
+          <div class="time">
+            <h3>16:50</h3>
+            <p>DEL</p>
+          </div>
+
+          <div class="duration">
+            <span>2h 25m</span>
+            <div class="line"></div>
+            <small>Non-stop</small>
+          </div>
+
+          <div class="time">
+            <h3>19:15</h3>
+            <p>BOM</p>
+          </div>
+
+          <div class="price">
+            <h3>₹5,799</h3>
+            <p>per person</p>
+          </div>
+
+          <button class="book-btn">Book Now</button>
+        </article>
+
+        <!-- Promotion -->
+        <div class="promo">
+          <div class="promo-icon">
+            <i class="ri-ticket-2-line"></i>
+          </div>
+          <div>
+            <h3>Flexible Booking</h3>
+            <p>Free cancellation on selected flights</p>
+            <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <aside class="filters">
+        <h2>Filters</h2>
+
+        <div class="filter-group">
+          <h3>Price Range</h3>
+          <input type="range" min="3000" max="8000" value="5500" />
+          <div class="range-label">
+            <span>₹3,000</span>
+            <span>₹8,000</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Airlines</h3>
+          <label
+            ><input type="checkbox" checked /> IndiGo <span>(12)</span></label
+          >
+          <label
+            ><input type="checkbox" checked /> Air India <span>(8)</span></label
+          >
+          <label
+            ><input type="checkbox" checked /> SpiceJet <span>(7)</span></label
+          >
+          <label
+            ><input type="checkbox" checked /> Vistara <span>(5)</span></label
+          >
+        </div>
+
+        <div class="filter-group">
+          <h3>Stops</h3>
+          <label
+            ><input type="checkbox" checked /> Non-stop <span>(25)</span></label
+          >
+          <label><input type="checkbox" /> 1 Stop <span>(6)</span></label>
+          <label><input type="checkbox" /> 2+ Stops <span>(2)</span></label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Departure Time</h3>
+          <label><input type="checkbox" /> Early Morning</label>
+          <label><input type="checkbox" /> Morning</label>
+          <label><input type="checkbox" /> Afternoon</label>
+          <label><input type="checkbox" /> Evening</label>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2026 SkyBook. Your journey starts here.</p>
+    </footer>
+  </body>
+</html>
