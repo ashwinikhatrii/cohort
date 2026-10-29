@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background:
+        radial-gradient(ellipse at top, #252036, transparent 60%),
+        #101114;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.tag {
+    color: #f5b942;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(42px, 8vw, 76px);
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+h1 span {
+    color: #f5b942;
+}
+
+.subtitle {
+    color: #a1a1aa;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.drum-kit {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 55px 0 35px;
+}
+
+.drum {
+    position: relative;
+    min-height: 165px;
+    padding: 20px 10px;
+    border: 1px solid #393943;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #27272f, #19191f);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.12s, border-color 0.12s,
+                box-shadow 0.12s, background 0.12s;
+}
+
+.drum:hover {
+    border-color: #f5b942;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 28px #f5b94222;
+}
+
+.drum:active,
+.drum.playing {
+    transform: scale(0.94);
+    border-color: #f5b942;
+    background: #40331d;
+    box-shadow: 0 0 25px #f5b94244;
+}
+
+.key {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: #f5b942;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.emoji {
+    font-size: 40px;
+    transition: transform 0.15s;
+}
+
+.drum.playing .emoji {
+    transform: scale(1.2) rotate(-8deg);
+}
+
+.name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.info {
+    border-top: 1px solid #303038;
+    padding-top: 25px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #67e8a5;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #67e8a5;
+}
+
+.info p {
+    color: #777782;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 14px;
+}
+
+footer {
+    color: #55555f;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 45px;
+}
+
+@media (max-width: 600px) {
+    .drum-kit {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 35px;
+    }
+
+    .drum {
+        min-height: 135px;
+    }
+
+    .drum:last-child {
+        grid-column: 1 / -1;
+    }
+
+    h1 {
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 
+                                    
+                                                         
+                                                                            
+                                                  
+                                          
